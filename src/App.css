@@ -1,0 +1,92 @@
+/* Main container for layout */
+.page-container{
+  overflow-x: hidden;
+}
+.home-page-container {
+  position: relative; /* already done - keep it */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Luxury background image */
+.luxury-background {
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: url('./assets/luxury-interior-exterior-design-pool-villa-with-livingroom.png') center center / cover no-repeat;
+  z-index: -2;
+}
+
+/* Dark overlay */
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+/* Header with blur and background image */
+.blurred-header {
+ width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.05); /* light transparent layer (adjust as needed) */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1;
+}
+
+/* Logo */
+.main-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+}
+
+/* Navbar */
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  padding: 1vh 0;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 1vh 1.5vw;
+  transition: 0.3s;
+}
+
+.navbar li a:hover {
+  color: #ddd;
+}
+
+.navbar {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);  /* light white line at top */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* light white line at bottom */
+}
+
+.about-page {
+  background-image: url('./assets/white-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  font-family: "adobe-clean", sans-serif;
+}
